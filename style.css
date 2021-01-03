@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+
+body.page2 {
+  height: 3000px;
+  position: relative;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.links {
+  padding-top: 0.5rem;
+}
+
+.links a {
+  font-size: 20px;
+}
+.links a:first-child {
+  margin-right: 1rem;
+}
+
+.fixed {
+  position: fixed;
+  max-height: 100vh;
+  width: 100vw;
+  padding-right: 1em;
+}
+
+.container {
+  display: flex;
+  margin-top: 300px;
+  justify-content: center;
+  height: 6000px;
+  width: 100%;
+  margin-top: 1000px;
+}
+
+.box {
+  width: 250px;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.box:hover {
+  transform: scale(1.3);
+}
+
+.active {
+  top: 32px !important;
+  left: 50% !important;
+  transform: translateX(-50%) scale(1) !important;
+}
+
+.blue {
+  width: 970px;
+  height: auto;
+  background: blue;
+  transition: 0.6s ease all;
+  transform-origin: left top;
+}
+
+.img-fluid {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.modal-img {
+  width: 100%;
+  object-fit: cover;
+  height: 550px;
+  filter: brightness(0.5);
+}
+
+.closing-img {
+  width: 970px;
+  height: 500px;
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 1s all ease;
+}
+
+.modal {
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  transition: 0.5s ease all;
+}
+
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.boxes {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+}
+
+.boxie {
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxie:not(:last-child) {
+  margin-right: 20px;
+}
+
+.blackBg {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.322);
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modalPage2 {
+  position: absolute;
+  transition: all 0.6s ease;
+}
+
+.page2-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
